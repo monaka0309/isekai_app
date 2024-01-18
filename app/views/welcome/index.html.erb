@@ -1,3 +1,75 @@
-<!-- app/views/welcome/index.html.erb -->
-<h1>異世界転生へようこそ！</h1>
-<%= link_to '異世界転生する', result_path, class: "btn btn-primary" %>
+<!DOCTYPE html>
+<html lang="ja" class="bg-white">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>異世界転生 Web アプリ</title>
+
+        <style>
+            body {
+                background-color: #f3f4f6; /* 明るいグレーの背景 */
+            }
+            .text-primary {
+                color: #4b5563; /* より濃いグレーのテキスト */
+            }
+            .text-secondary {
+                color: #9ca3af; /* 明るいグレーのテキスト */
+            }
+        </style>
+    </head>
+    <body class="flex justify-center">
+        <div class="container mx-auto">
+            <!-- ヘッダー -->
+            <header class="text-center p-5">
+                <h1 class="text-4xl font-bold text-primary">異世界転生の冒険</h1>
+            </header>
+
+            <!-- メインコンテンツ -->
+            <div class="text-center">
+                <br>
+
+            </div>
+            <main class="p-10 w-full bg-[#fef3c7] shadow-lg rounded-lg">
+                <section class="mb-5">
+                    <h2 class="text-4xl font-semibold text-gray-800">物語の紹介</h2>
+                    <p class="font-mono mt-3 text-gray-500">あなたは死にました。<br>
+                    これから異世界で転生していただきます。<br>
+                    <br>
+                    え、嫌ですって？<br>
+                    そんなことは聞いていません。「転生したらスライムだったやつ」観てないんですか？<br>
+                    <br>
+                    あなたは @なかすけ_44 によって選ばれた奇跡の人間です。立ち上がってください。
+                    </p>
+                </section>
+            </main>
+
+            <br>
+
+            <div class="card w-full bg-[#bbf7d0] text-primary-content">
+                <div class="card-body">
+                    <h2 class="card-title">さぁ、あなたの運を試しましょう</h2>
+                    <p>どうなるかはあなた次第よ。<br><br>過去の自分を振り返ってあるべき姿になりなさい。<br><br>ふっふっふ。</p>
+                    <div class="card-actions justify-end">
+                        <button class="btn btn-success" id="isekai-button">異世界転生する</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                document.getElementById('isekai-button').addEventListener('click', function() {
+                    window.location.href = '/result';
+                });
+
+            </script>
+
+            <footer class="text-center p-5">
+                <p class="text-sm text-secondary">&copy; 2024 異世界転生 Web アプリ なかすけ</p>
+            </footer>
+        </div>
+
+    </body>
+    <footer>
+    </footer>
+</html>
+
+
+
