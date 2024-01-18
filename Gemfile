@@ -28,6 +28,7 @@ gem "stimulus-rails"
 gem "cssbundling-rails"
 
 gem 'active_hash'
+gem "meta-tags"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
