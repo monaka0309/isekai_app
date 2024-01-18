@@ -1,2 +1,55 @@
-<h1>Results#show</h1>
-<p>Find me in app/views/results/show.html.erb</p>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>異世界転生結果</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.0.0/dist/full.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #f3f4f6; /* 明るいグレーの背景 */
+            }
+            .text-primary {
+                color: #4b5563; /* より濃いグレーのテキスト */
+            }
+            .text-secondary {
+                color: #9ca3af; /* 明るいグレーのテキスト */
+            }
+            .hero-background {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 50%;
+                background: url('https://placeimg.com/640/480/any') no-repeat center center;
+                background-size: cover;
+                opacity: 0.2;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mx-auto p-5">
+            <div class="text-center p-10">
+                <h1 class="text-4xl font-bold text-primary">あなたの異世界転生結果</h1>
+                <br>
+                <br>
+                <br>
+                <h1 class="text-4xl font-bold text-black">「<%= @result.name %>」</h1>
+                <%= image_tag @result.image, class: "mx-auto" %>
+            </div>
+            <div class="text-center p-10 text-gray-700">
+                <p class="text-xl mt-5">おめでとうございます！ <br>
+                <br>
+                あなたは異世界で
+                <br>
+                <strong>「<%= @result.name %>」</strong>になりました！</p>
+                <br>
+                <p class="text-xl mt-5">はいがんばれww</p>
+                <br>
+                <%= link_to '異世界転生しなおす', root_path, class: "btn btn-success" %><br>
+                
+            </div>
+        </div>
+    </body>
+</html>
