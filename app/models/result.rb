@@ -9,6 +9,7 @@ class Result < ActiveHash::Base
         { id: 7, name: "麻雀を楽しむ総理大臣", image: 'souri.jpeg' },
         { id: 8, name: "ギロチン台に立っている貴族", image: 'girotin.jpeg' },
         { id: 9, name: "むきむきになった亀", image: 'kame.jpeg' },
-        { id: 10, name: "落ちてる歯を吸い込んだカービィー", image: 'kabi.jpeg' }
+        { id: 10, name: "落ちてる歯を吸い込んだカービィー", image: 'kabi.jpeg' },
+        { id: 11, name: "44期 のぞみ", image: 'gorira.jpeg' }
     ]
 end
