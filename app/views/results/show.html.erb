@@ -15,34 +15,20 @@
             .text-secondary {
                 color: #9ca3af; /* 明るいグレーのテキスト */
             }
-            .hero-background {
-                position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 50%;
-                background: url('https://placeimg.com/640/480/any') no-repeat center center;
-                background-size: cover;
-                opacity: 0.2;
-                z-index: -1;
-            }
         </style>
     </head>
     <body>
-        <div class="container mx-auto p-5">
+        <div class="container mx-auto padding-5">
             <div class="text-center p-10">
-                <h1 class="text-4xl font-bold text-primary">あなたの異世界転生結果</h1>
-                <br>
-                <br>
-                <br>
+                <h1 class="text-4xl font-bold text-primary mb-10">あなたの異世界転生結果</h1>
+                
                 <h1 class="text-4xl font-bold text-black">「<%= @result.name %>」</h1>
                 <%= image_tag @result.image, class: "mx-auto" %>
             </div>
-            <div class="text-center p-10 text-gray-700">
-                <p class="text-xl mt-5">おめでとうございます！ <br>
-                <br>
-                あなたは異世界で
-                <br>
+            <div class="text-center p-10 text-gray-700 mb-1">
+                <p class="text-xl mt-10">おめでとうございます！ <br>
+                
+                あなたは異世界で<br>
                 <strong>「<%= @result.name %>」</strong>になりました！</p>
                 <br>
                 <p class="text-xl mt-5">はいがんばれww</p>
@@ -51,5 +37,18 @@
                 
             </div>
         </div>
+        <footer class="text-black mb-20 text-center">
+            <button type="button" class="btn btn-Default mb-10">
+                <%# <a target="_blank" data-toggle="tooltip" data-placement="bottom" href="https://twitter.com/share?text=一緒に異世界転生しよ〜！ %>
+                <a target="_blank" data-toggle="tooltip" data-placement="bottom" href="https://twitter.com/share?text=<%= CGI.escape("私の異世界転生先は#{ @result.name }だよ〜！") %>
+        
+                
+                &amp;hashtags=ミニアプリ,異世界転生%0a
+                &amp;url=%0ahttps://isekai-app4-5f4887269568.herokuapp.com/">
+                <span class="fab fa-twitter" style="color: white;"></span> X へ共有
+                </a>
+            </button>
+        </footer>
     </body>
+
 </html>
