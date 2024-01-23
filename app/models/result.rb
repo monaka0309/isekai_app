@@ -10,6 +10,7 @@ class Result < ActiveHash::Base
         { id: 8, name: "ギロチン台に立っている貴族", image: 'girotin.jpeg' },
         { id: 9, name: "むきむきになった亀", image: 'kame.jpeg' },
         { id: 10, name: "落ちてる歯を吸い込んだカービィー", image: 'kabi.jpeg' },
-        { id: 11, name: "44期 のぞみ", image: 'gorira.jpeg' }
+        { id: 11, name: "44期 のぞみ", image: 'gorira.jpeg' },
+        { id: 12, name: "れなっちさんが見つけた可愛い黒猫", image: 'cat.jpg' }
     ]
 end
