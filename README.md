@@ -18,9 +18,3 @@ herokuによるデプロイ、tailwindの練習としてミニアプリを作成
 
 
 <p align="right">(<a href="#top">トップへ</a>)</p>
-
-make build
-
-を実行して Docker image を更新してください
-
-<p align="right">(<a href="#top">トップへ</a>)</p>
