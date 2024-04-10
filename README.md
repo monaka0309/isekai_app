@@ -1,24 +1,26 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<!-- プロジェクト名を記載 -->
+## プロジェクト名
+## isekai_app （異世界転生の冒険）
+（現在サービスは終了しています。）
+<br>
+<!-- プロジェクトについて -->
+## プロジェクトについて
+herokuによるデプロイ、tailwindの練習としてミニアプリを作成しました。
 
-Things you may want to cover:
+## 環境
 
-* Ruby version
+<!-- 言語、フレームワーク、ミドルウェア、インフラの一覧とバージョンを記載 -->
 
-* System dependencies
+| 言語・フレームワーク  | バージョン |
+| --------------------- | ---------- |
+|--|--|
 
-* Configuration
 
-* Database creation
+<p align="right">(<a href="#top">トップへ</a>)</p>
 
-* Database initialization
+make build
 
-* How to run the test suite
+を実行して Docker image を更新してください
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<p align="right">(<a href="#top">トップへ</a>)</p>
